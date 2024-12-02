@@ -1,0 +1,61 @@
+Hypertext Markup Language ou HTML
+
+Páginas da Web, páginas HTML ou simplesmente páginas são semelhantes a uma página em um e-book. Eles são uma única tela que exibe informações. Você pode rolar para cima e apara baixo na página, mas ela foi feita para ser uma coleção de dados semelhantes. 
+Os desenvolvedores de software criam páginas em arquivos HTML. Um arquivo é como um documento que você pode criar em um processador de texto. Em vez de escrever em um idioma como inglês ou espanhol, você cria arquivos usando os idiomas projetados para sites.
+
+No desenvolvimento web, uma página web pode ser um único arquivo ou o resultado de reunir dois ou mais arquivos
+Um site é um conjunto de páginas. Voltando à nossa analogia com o e-book, o próprio e-book seria o site. Tem todas as páginas e é lido por um utilizador uma página de cada vez. Um site pode ser uma única página, milhares de páginas e tudo mais.
+Ao ler esta unidade, você está lendo uma página da web. Você rola para cima e para baixo para examinar as informações desejadas. Eventualmente, você navega para uma página diferente para revisar a próxima unidade
+. Todas essas páginas compõem o site que é o Microsoft Learn.
+
+
+Criando uma página da Web
+As páginas da Web são criadas principalmente com uma combinação de três linguagens - HTML (Hypertext Markup Language), CSS (folhas de estilo em cascata) e JavaScript.
+Esses idiomas podem existir todos em um arquivo. Mas eles podem ser separados em vários arquivos.
+Muitos "programas assistentes" (chamados frameworks) existem para ajudar. Em sua essência, porém, todos eles fazem HTML, CSS e JavaScript.
+
+Como todos os programas, HTML, CSS e JavaScript sozinhos não podem fazer muito (e podem ser difíceis de ler). Eles precisam de uma ferramenta que possa "lê-los" e saber o que fazer com eles.
+O navegador da Web é um exemplo de tal ferramenta.
+
+HTML
+HTML diz ao navegador da Web o que fazer com as informações na página usando marcação. 
+A marcação exibe determinadas partes do texto de uma maneira específica. 
+Algum texto precisa ser negrito ou itálico. Algum texto precisa estar em uma tabela. As tags HTML dizem ao navegador o que fazer. Se você quiser que o navegador leia algo em negrito, você escreveria assim em HTML:
+
+Copiar
+<strong>This is bold text</strong>
+As tags "fortes" dizem ao navegador que o texto intermediário deve ser negrito. Ele apareceria como texto em negrito quando você o visualiza em um navegador:
+Este é o texto em negrito
+
+CSS
+CSS adiciona mais estilo à página, como qual cor fazer algo ou qual fonte usar. CSS tornou-se muito poderoso. 
+Ele pode até mesmo dizer ao navegador onde as informações devem ser exibidas na página.
+
+Hypertext Markup Language, ou HTML, é a linguagem principal usada para criar uma página web. HTML é usado para descrever as informações a serem exibidas ao usuário. 
+HTML informa a um navegador como exibir texto.
+
+ Nota
+
+A palavra hipertexto vem de ter texto em uma página que quando clicado ou tocado leva o usuário para outra página - links ou hiperlinks.
+
+
+ntrodução a tags e elementos
+Se você já teve que formatar o texto como torná-lo negrito ou aumentar a fonte, talvez não tenha pensado no que acontece "nos bastidores".
+
+Quando você experimenta texto em uma página da Web, o navegador faz o trabalho para formatá-lo usando código. O código HTML está por trás do que é exibido. O código diz ao navegador o que fazer para que o texto apareça da maneira que aparece.
+
+Como aprendemos em uma unidade anterior, quando uma página da Web tem texto em negrito, as palavras de código HTML que dizem ao navegador para tornar o texto negrito são chamadas de tags. 
+As tags cercam o texto que precisa ser exibido de uma maneira específica ou transformado. As tags normalmente têm um início e um fim, com texto entre elas.
+
+Uma tag e qualquer conteúdo entre abrir e fechar é chamado de elemento
+
+Esta é uma tag aberta para fazer algo ousado: <strong>
+Esta é uma tag de fechamento para fazer algo ousado: </strong>
+Este é um elemento: <strong> Make me bold </strong>
+
+
+Os cabeçalhos são elementos comuns numerados de um a seis, sendo um o topo da hierarquia e seis o mais baixo. Estes são escritos como h1 através de h6.
+Se quiser adicionar um título de nível superior a uma página para exibir a palavra Currículo, você pode usar:
+
+
+<h1>Currículo</h1>
