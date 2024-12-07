@@ -1,0 +1,34 @@
+As metas tags são metadados, 
+são lidas apenas pelos navegadores, para o mecanismo de busco saber as palavras chaves do meu site.
+
+A tag que informa o idioma da página web é o elemento <html>, com o atributo lang. 
+Esse atributo deve ser usado para indicar o idioma principal do conteúdo da página.
+
+<!DOCTYPE html>
+<!-- A tag que informa o idioma da página web é o elemento <html> -->
+<html lang="pt-br">
+<head>
+    <!--Meta tag que defini os tipos de caracteres do tipo UTF-8 -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+
+http-equiv="X-UA-Compatible": Instrui o navegador a renderizar a página no modo mais compatível possível.
+content="IE=edge": Especifica que o Internet Explorer deve usar o modo mais recente disponível 
+(ignorar modos de compatibilidade mais antigos).
+meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+
+ <!--Informa a área visivel da página, essa meta tag diz que vai se adaptar a tela do dispositivo do usuário-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!--Ela descreve o que é o site, é como se fosse uma sinopse do site-->
+    <meta name="description" content="Esse é o meu primeiro site">
+
+    <!--Indica as plavras chaves para o mecanismo de busca do site-->
+    <meta name="keywords" content="Programação,HTML,CSS,JavaScript">
