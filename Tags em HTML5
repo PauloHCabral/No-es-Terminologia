@@ -1,0 +1,35 @@
+Os titulos em HTML vai de <h1>Titulo</h1> até <h6>Titulo</h6>
+Eles serverem para dar um destaque em determinado assunto
+
+!DOCTYPE html>
+<!-- A tag que informa o idioma da página web é o elemento <html> -->
+<html lang="pt-br">
+<head>
+    <!--Meta tag que defini os tipos de caracteres do tipo UTF-8 -->
+    <meta charset="UTF-8">
+    <!--Informa a área visivel da página, essa meta tag diz que vai se adaptar a tela do dispositivo do usuário-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Ela descreve o que é o site, é como se fosse uma sinopse do site-->
+    <meta name="description" content="Esse é o meu primeiro site">
+    <!--Indica as plavras chaves para o mecanismo de busca do site-->
+    <meta name="keywords" content="Programação,HTML,CSS,JavaScript">
+    <!--Indica o autor do siste, quem criou-->
+    <meta name="author" content="Paulo Henrique Cabral">
+
+    <title>Olá Mundo ! Primeiro Site</title>
+</head>
+<body>
+    <h1>Titulo 1</h1>
+    <h2>Titulo 2</h2>
+    <h3>Titulo 3</h3>
+    <h4>Titulo 4</h4>
+    <h5>Titulo 5</h5>    
+    <h6>Titulo 6</h6>
+</body>
+</html>
+
+<p>Serve para paragrafo</p>
+
+<br>Quebra de linha</br>
+
+<pre> Deixa o texto igual ao poema</pre>
