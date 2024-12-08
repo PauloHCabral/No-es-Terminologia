@@ -1,0 +1,34 @@
+tag de negrito:
+<b>Negrito</b>
+
+<strong>Dar ênfase em algum assunto para o navegador</strong>
+
+<hr>Colocar uma linha em divisão(Essa tag não é fechada)
+
+<br>Quebra a linha
+
+<i>Italico</i>
+
+<u>Anderline, fica sublinhado </u>
+
+<small>Deixa tudo pequeno</small>
+
+<del>Deixa um risco, como se estivesse deletado</dell>
+
+
+Para deixar um valor em cima de outro valor:
+
+<p> O número é 2<sup>10</sup></p>
+
+ara deixar um valor na parte inferior
+<p> O número é 2<sub>10</sub>p
+
+
+
+
+
+
+
+
+
+
