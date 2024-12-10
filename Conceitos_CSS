@@ -1,0 +1,156 @@
+Se você quiser que sua página HTML exiba todo o texto entre as h1 tags com a cor laranja, você pode usar o código CSS 
+
+h1 {
+     color: range;
+}
+
+O código CSS acima começa com (h1) que seleciona o HTML que você deseja estilizar. O h1 na amostra é chamado de seletor.
+
+Observe o código dentro das chaves encaracoladas, color: orange;t declara como a tag selecionada h1 deve ser estilizada.
+O código CSS nas chaves { }, como color: orange; é chamado de declaração.
+
+Sua declaração de exemplo contém uma propriedade, , que é separada de um valor, orange, com dois pontos (:), 
+e o final da configuração é marcado por um ponto-e-vírgula (;). color
+
+
+Incorporar um arquivo CSS
+Uma maneira rápida de adicionar informações de estilo é colocá-las dentro head das tags da sua página HTML usando um style atributo. 
+Este método não é considerado a melhor prática, mas pode ser usado para aprendizagem e testes.
+
+O exemplo a seguir adiciona a <style> tag com informações de estilo para qualquer h1 um para exibir cinza. 
+Como esse é o único estilo, o restante do HTML é exibido com o estilo padrão do navegador.
+
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Olá Mundo</title>
+    <!-- Aqui começa o código CSS -->
+    <style>
+        h1 {
+            color: orange;
+        }
+    </style>
+</head>
+<body>
+    <h1>Deus é bom, e a sua misericórdia dura para sempre</h1>
+    <p>O sangue de Jesus Cristo nos purifica de todo pecado !</p>
+</body>
+</html>
+
+
+
+Link para um arquivo CSS
+Quando você adiciona estilos ao HTML (Hypertext Markup Language), 
+é melhor fazer o estilo em um arquivo CSS separado. Quando vários arquivos HTML usam o mesmo CSS, eles terão uma aparência consistente.
+Além disso, atualizar um arquivo CSS é mais fácil do que ter que atualizar cada arquivo HTML individual.
+
+Para fazer referência ao arquivo CSS, use o link elemento .
+
+link tem dois atributos, rel e href. rel é usado para identificar o tipo de recurso que você está referenciando, folha de estilos para folhas de estilo.
+href é usado para identificar o caminho para o arquivo CSS. Se o arquivo CSS estava na mesma pasta que o arquivo HTML e tinha o nome style.css, 
+você pode usar o seguinte para fazer referência a ele a partir da sua página:
+
+<link rel="stylesheet" href="style.css">
+
+Agora você terá pelo menos dois arquivos, um .html arquivo e um .css arquivo. O exemplo anterior teria um arquivo HTML vinculado ao CSS.
+
+Para estilizar uma página feita em HTML com o CSS, é recomendado, criar outro arquivo no vs code, exemplo estilo.css
+Mencionar a tag que será estilizada.
+E mencionar essa arquivo criada em CSS dentro do arquivo de html com o endereço:
+<link rel="stylesheet" href="nome_do_arquivo_css.css">
+
+
+Para fazer comentarios em uma página CSS:
+
+/* comment */
+
+
+A opção mais comum para definir a fonte a ser usada em uma página é font-family. font-family normalmente é definido como uma lista de fontes, permitindo que o navegador use a primeira fonte listada que ele pode suportar. 
+Por exemplo, uma configuração de tentará Tahoma, Verdana, sans-serif usar Tahoma, seguida por Verdana e, finalmente, uma fonte genérica sans serif.
+
+
+
+font-style é usado para colocar o texto em itálico definindo o valor como italic. font-weight suporta diferentes configurações em negrito, sendo bold as mais comuns.
+E, finalmente, text-decoration é usado para underline, overline, ou line-through texto.
+
+font-weight: bold;
+font-style: italic;	
+text-decoration: line-through;	
+
+text-decoration pode parecer diferente das outras opções usadas para modificar a exibição de uma fonte.
+A principal diferença é que text-decoration é usado para aplicar estilo ao redor ou no texto, mas não modifica a fonte em si. 
+Negrito e itálico estão modificando a fonte.
+
+NOTA:
+O uso de sublinhado em uma página da Web geralmente deve ser evitado porque o texto pode parecer um hiperlink.
+
+Dimensionamento de fontes
+Dimensionamento de fontes
+O font-size permite que você indique o tamanho da fonte que deseja usar. O CSS oferece a capacidade de usar dimensionamento absoluto ou relativo. 
+O dimensionamento absoluto é normalmente definido em pixels e sempre usará o tamanho especificado. 
+O dimensionamento relativo pode ser baseado no tamanho padrão do navegador e medido em porcentagem ou com base no dimensionamento do elemento de referência.
+
+NOTA:
+O tamanho de fonte padrão para muitos navegadores é de 16 pixels.
+
+O dimensionamento absoluto pode ser medido em pixels e é indicado em CSS usando px. Para definir uma fonte como 14 pixels, você pode usar a diretiva font-size: 14px;.
+
+O tamanho relativo das fontes é normalmente medido usando em ou rem. em é curto para element e é relativo ao pai (em) ou à raiz (rem).
+A raiz é o html elemento. 1em ou 1rem é igual ao tamanho do elemento pai ou raiz, enquanto 2em ou 2em seria o dobro do tamanho. 
+Como os tamanhos de tela podem variar, normalmente é melhor usar o tamanho relativo sempre que possível.
+
+<html>
+    <body>  
+        <div>Sample text</div>
+    </body>
+</html>
+
+
+
+
+
+html {
+    font-size: 18px;
+}
+div {
+    font-size: 14px;
+}
+
+
+Se o div elemento , 1em seria 14 pixels porque o pai é div e definido como 14px, enquanto 1rem seria 18 pixels porque a html raiz está definida como 18px.
+
+1.5em para o div elemento seria de 21 pixels (14 * 1,5 = 21), e 1.5rem seria de 27 pixels (18 * 1,5 = 27). 
+Você pode usar em e rem garantir que o restante da página seja dimensionado à medida que atualiza os tamanhos pai ou raiz.
+
+Cores
+A cor da fonte pode ser definida usando a color propriedade. 
+color pode ser definido como valores RGB (vermelho, verde, azul) ou como uma das muitas cores nomeadas como black ou lightgray.
+
+Os valores RGB em CSS podem ser valores hexadecimais prefixados com um #, ou valores de 0 a 255 dentro da rgb função. 
+Para definir a cor para o tom padrão de marrom, você usaria color: brown;.
+Para um tom personalizado de roxo, você pode usar color: #7462e0o .
+
+/* named value */
+div {
+    color: brown;
+}
+
+/* RGB hex value */
+h1 {
+    color: #7462e0;
+}
+
+/* RGB function */
+h2 {
+    color: rgb(105, 6, 19);
+}
+
+
+ Importante
+
+A seleção de cores deve sempre considerar aqueles que têm uma deficiência de visão de cores.
+Você pode usar ferramentas como o Color Safe para ajudar na seleção de cores contrastantes para garantir que seu site seja acessível a todos os usuários.
+
