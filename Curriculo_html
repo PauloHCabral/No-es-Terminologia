@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo01.css">
+    <title>Curriculo</title>
+    
+   
+
+</head>
+
+<body>
+    <img src="eu.img.jpg" alt="Foto de perfil">
+    <h1>Paulo Henrique</h1>
+    <h4><a>Estado civil: Casado</a></h4>
+    <h4><a>Formação: Graduação Completa</a></h4>
+    <h4>Nascionalidade: Brasileiro</h4>
+    <h4>CPF: 123.123.123.123</h4></br>
+
+   
+    
+    <h5>Redes Sociais</h5>
+    <a href="http://www.linkedin.com/in/paulo-henrique-barbosa-cabral-077b7b142">linkedin</a></br>
+    <a href="https://github.com/PauloHCabral">GitHub</a></br>
+    <a href="e-mail:PHpaulohenriquecabral@outlook.com">e-mail</a></br>
+    
+</br>
+
+    <h5><a>Experiência</a></h5><p>Cloud Computing •AWS e Oracle Cloud: Criação de instâncias, backups, 
+        gerenciamento de acessos e compartilhamento de arquivos. •	Infraestrutura: Provisionamento e configuração de recursos em nuvem.
+        Sistemas Operacionais •	Windows Server: Administração de Active Directory, criação de usuários, grupos e políticas de grupo. 
+        Linux: Navegação em diretórios e manipulação de arquivos.•	Roteamento: Experiência com protocolos BGP, OSPF e roteamento estático/dinâmico. •	
+        Firewalls: Configuração e análise de logs em firewalls Fortinet, DrayTEK e SonicWall, incluindo criação de usuários, VPNs e VLANs. 
+        SIEM e SOC: Análise de incidentes de segurança utilizando ferramentas como SIEM, Insights e Trend Micro. •	Backup: Rotinas de backup em firewalls e servidores, utilizando ferramentas como Cobian Backup.</p>
+    
+    <h5><a>Cursos</a></h5>
+    <ul>
+        <li>Cisco Cibersegurança</li>
+        <li>Amazon Cloud Practitioner</li>
+        <li>Forninet NSE3</li>
+        <li>Python em Andamento</li>
+        <li>AWS Cloud Practitioner em Andamento</li>
+    </ul>
+
+</body>
+</html>
