@@ -1,0 +1,42 @@
+html {
+    
+    font-family: Verdana, Tahoma, sans-serif;
+    font-size: 12px;
+
+}
+
+
+
+
+/* estilizando os parágrafos */
+h1 {
+
+    font-size: 1.2rem;
+    color:blueviolet
+    
+}
+
+h5{
+
+    font-size: 1.0rem;
+}
+
+
+h6 {
+
+    font-size: 1.0rem;
+
+}
+
+
+h5 {
+
+    font-size: 1.0rem;
+}
+
+
+p {
+
+    color:chartreuse
+}        
+
