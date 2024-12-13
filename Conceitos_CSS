@@ -154,3 +154,22 @@ h2 {
 A seleção de cores deve sempre considerar aqueles que têm uma deficiência de visão de cores.
 Você pode usar ferramentas como o Color Safe para ajudar na seleção de cores contrastantes para garantir que seu site seja acessível a todos os usuários.
 
+
+Tamanho dos parágrafo
+
+h1 {
+    font-size: 1.6rem;
+}
+
+h2 {
+    font-size: 1.4rem;
+}
+
+h3 {
+    font-size: 1.2rem;
+}
+
+h4 {
+    font-size: 1.1rem;
+}
+
