@@ -1,0 +1,105 @@
+Inspecionar seletores
+Concluído
+100 XP
+5 minutos
+Os seletores CSS são usados para selecionar os elementos a serem aplicados ao estilo. Os seletores oferecem uma grande flexibilidade e poder. Os seletores permitem aplicar um estilo a todos os elementos ou a um elemento específico e até mesmo a uma letra específica.
+
+Existem três tipos principais de seletores:
+
+Elementos
+Classes
+IDs
+Usando esses seletores, você pode aplicar estilos a muitos elementos ou a alguns.
+
+Seletores de elementos
+Um seletor de elementos se aplica a todos os elementos com essa tag. 
+Qualquer elemento HTML pode ser usado como um seletor de elementos. Usar h1 permite modificar todos os h1 elementos na página.
+
+h1 {
+    /* style */
+}
+
+
+
+Seletores de classe
+Todos os elementos HTML permitem que você adicione um class atributo.
+class é usado para agrupar elementos e permitir que você os marque para aplicar configurações CSS.
+
+Ao criar um currículo, você provavelmente terá seções para seu histórico de educação e emprego. 
+Usar uma classe permitiria formatar esses elementos com o mesmo estilo.
+
+<div class="history">
+    <h2>Employer name</h2>
+    <h3>Job title</h3>
+    <h3>3 Jun 19 - 8 Jun 21</h3>
+</div>
+
+<div class="history">
+    <h2>School name</h2>
+    <h3>Major</h3>
+    <h3>Sep 2014 - May 2018</h3>
+</div>
+
+
+
+No exemplo anterior, você provavelmente desejaria que a formatação de cada um div fosse a mesma, pois eles estão exibindo tipos semelhantes de informações. 
+Ao marcar os dois div elementos com a mesma classe, você pode aplicar o mesmo estilo CSS a cada um.
+
+Para identificar uma classe em CSS, prefixe a . na frente do nome. No nosso exemplo, você usaria .history.
+
+
+.history {
+           /* your styles */
+
+}
+
+
+
+Se estiver usando um arquivo CSS, 
+você escreveria a definição de estilo de classe no arquivo CSS. O atributo class em HTML faz referência à definição do arquivo CSS.
+
+
+Pseudo-classes
+As pseudoclasses permitem identificar elementos com base em sua localização em uma página ou como o usuário está interagindo com eles.
+
+À medida que um usuário interage com uma página da web, o estado de vários elementos mudará. Um usuário pode estar passando o mouse sobre um item e você deseja que a cor mude quando ele passar o mouse.
+Ou o usuário pode ter clicado em um link. Depois que eles visitarem esse link, você pode informá-los alterando o estilo. CSS suporta muitas pseudo-classes, que são aplicadas dinamicamente com base no que o usuário faz ou fez. As pseudoclasses são prefixadas por um , e são colocadas após outro :seletor.
+
+a : houver {
+       background-color: yellow;
+}
+
+Algumas das pseudoclasses mais comuns estão listadas na tabela a seguir:
+
+hover	O usuário está passando o cursor sobre um item
+visited	Um link que foi clicado anteriormente
+link	Um link não visitado
+first-child	O primeiro filho que corresponde ao seletor em uma hierarquia
+last-child	O último filho correspondente ao seletor em uma hierarquia
+
+
+Por exemplo, para definir a cor do plano de fundo de um link como amarelo quando um usuário passa o cursor sobre ele, você pode usar o seguinte CSS:
+
+Usando pseudoelementos e CSS, você pode remover o sublinhado dos hiperlinks.
+Como regra geral, é melhor deixar o sublinhado para fins de acessibilidade.
+
+
+Seletores de ID
+Semelhante às classes, um ID permite aplicar um estilo a um elemento. Mas, enquanto uma classe pode ser aplicada a vários elementos, uma ID deve ser exclusiva e referir-se a apenas um elemento.
+
+Em um currículo, você pode ter uma seção para mídias sociais, como X, GitHub ou seu blog. 
+Se você quisesse um estilo personalizado para essa seção, você poderia definir um ID:
+O texto sublinhado permite que um usuário identifique rapidamente links em uma página.
+
+
+<div id="social-media">
+     <!-- lista dos links aqui -->
+</div>
+
+
+IDs são prefixados com um # em CSS:
+
+#social-media {
+/* style */
+
+
