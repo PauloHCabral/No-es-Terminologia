@@ -1,0 +1,29 @@
+As pseudoclasses permitem identificar elementos com base em sua localização em uma página ou como o usuário está interagindo com eles.
+
+À medida que um usuário interage com uma página da web, o estado de vários elementos mudará. 
+Um usuário pode estar passando o mouse sobre um item e você deseja que a cor mude quando ele passar o mouse. 
+Ou o usuário pode ter clicado em um link. Depois que eles visitarem esse link, você pode informá-los alterando o estilo. 
+CSS suporta muitas pseudo-classes, que são aplicadas dinamicamente com base no que o usuário faz ou fez. As pseudoclasses são prefixadas por um , e são colocadas após outro :seletor.
+
+Por exemplo, para definir a cor do plano de fundo de um link como amarelo quando um usuário passa o cursor sobre ele, você pode usar o seguinte CSS:
+
+a:hover {
+    background-color: yellow;
+}
+
+
+Algumas das pseudoclasses mais comuns estão listadas na tabela a seguir:
+
+Pseudo-classe	
+hover =	O usuário está passando o cursor sobre um item
+visited	= Um link que foi clicado anteriormente
+link	= Um link não visitado
+first-child	= O primeiro filho que corresponde ao seletor em uma hierarquia
+last-child	= O último filho correspondente ao seletor em uma hierarquia
+
+
+ Importante
+
+Usando pseudoelementos e CSS, você pode remover o sublinhado dos hiperlinks.
+Como regra geral, é melhor deixar o sublinhado para fins de acessibilidade. 
+O texto sublinhado permite que um usuário identifique rapidamente links em uma página.
