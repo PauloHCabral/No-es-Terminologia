@@ -1,0 +1,100 @@
+Link Absoluto
+Um link absoluto contém o endereço completo do recurso, incluindo o protocolo (como http ou https), o domínio e o caminho completo.
+
+Características:
+
+Sempre aponta para o mesmo recurso, independentemente da localização do arquivo HTML.
+Útil para vincular a páginas externas ou recursos de outros sites.
+Exemplo:
+
+html
+Copiar código
+<a href="https://www.exemplo.com/pagina">Visite o site</a>
+Aqui, o link direciona o usuário para a página localizada em https://www.exemplo.com/pagina.
+
+Link Relativo
+Um link relativo especifica o caminho em relação à localização atual do arquivo HTML. Não inclui o domínio ou protocolo.
+
+Características:
+
+É mais curto e prático para recursos internos do site.
+Depende da estrutura de diretórios do site.
+Tipos de Caminhos Relativos:
+
+No mesmo diretório: Se o arquivo está no mesmo diretório, basta usar o nome do arquivo.
+
+html
+Copiar código
+<a href="sobre.html">Sobre Nós</a>
+Em um subdiretório: Se o arquivo está em um subdiretório, inclua o nome do diretório.
+
+html
+Copiar código
+<a href="diretorio/contato.html">Contato</a>
+No diretório pai: Use ../ para subir um nível na hierarquia.
+
+html
+Copiar código
+<a href="../index.html">Página Inicial</a>
+Caminho raiz: Comece com / para especificar o caminho a partir do diretório raiz do site.
+
+html
+Copiar código
+<a href="/produtos/categorias.html">Categorias</a>
+Quando Usar Cada Tipo?
+Links Absolutos: Para recursos externos ou quando o endereço completo é necessário.
+Links Relativos: Para criar conexões dentro do mesmo site, facilitando a manutenção e tornando o site mais portátil (por exemplo, ao mover o site para outro domínio).
+
+
+
+
+
+Dito por si:
+o target não é mais utilizado ?
+Dito pelo ChatGPT:
+ChatGPT
+O atributo target ainda é amplamente utilizado em HTML e continua relevante, especialmente quando você deseja especificar como os links devem ser abertos. Ele é usado para determinar o contexto de navegação ao clicar em um link.
+
+Principais Valores do target
+_self (Padrão)
+
+Abre o link na mesma aba ou janela onde foi clicado.
+Não é necessário especificar, pois é o comportamento padrão.
+html
+Copiar código
+<a href="pagina.html" target="_self">Abrir na mesma aba</a>
+_blank
+
+Abre o link em uma nova aba ou janela.
+É amplamente utilizado para links externos.
+html
+Copiar código
+<a href="https://www.exemplo.com" target="_blank">Abrir em nova aba</a>
+_parent
+
+Abre o link no quadro pai do frame atual (em documentos com frames).
+html
+Copiar código
+<a href="pagina.html" target="_parent">Abrir no quadro pai</a>
+_top
+
+Abre o link no contexto mais alto da janela, ignorando frames.
+html
+Copiar código
+<a href="pagina.html" target="_top">Abrir no contexto mais alto</a>
+Nomes de janelas específicas
+
+Você pode usar um nome personalizado para reutilizar uma aba ou janela previamente aberta.
+html
+Copiar código
+<a href="pagina.html" target="janelaPersonalizada">Abrir em uma janela personalizada</a>
+Considerações Modernas
+Embora o target="_blank" seja útil, ele pode introduzir riscos de segurança, como ataques de "tabnabbing" (em que o site aberto pode redirecionar a aba original). Para mitigar isso, recomenda-se usar o atributo rel="noopener noreferrer" junto com target="_blank".
+
+Exemplo seguro:
+
+html
+Copiar código
+<a href="https://www.exemplo.com" target="_blank" rel="noopener noreferrer">Abrir em nova aba</a>
+
+
