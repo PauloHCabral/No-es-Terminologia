@@ -15,3 +15,25 @@ Tag usada para informar endereço, url, número de telefone
 Tag utilizada para colocar a referencia de quem falou ou escreveu tal frase
 <p><q>O caminho para alcançar a paz não é o da ocultação de convicções, 
 e sim o da expressão honesta delas no poder do Espírito Santo.</q><cite>Charles Spuergeon</cite></p>
+
+
+
+ag <blockquote> (Citação em Bloco)
+Descrição: Usada para citações longas e é um elemento de bloco. 
+Diferente do <q>, não adiciona aspas automaticamente, 
+mas cria uma separação visual no layout, como uma indentação ou margens maiores.
+
+<blockquote>
+    Texto longo citado aqui.
+</blockquote>
+
+
+
+Tag bidirecional, ele inverte o texto da ireita para esquerda, ou da esquerda para a direita:
+<bdo dir="ltr" Paulo Henrique </p> <!-- Da esquerda para a direita-->
+<bdo dir="rtl" Paulo Henrique </p> <!-- Da direita para a esquerda-->
+
+
+
+
+
