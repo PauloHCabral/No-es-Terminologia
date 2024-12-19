@@ -1,1 +1,13 @@
 
+Criei um link dentro do arquivo index01.html, para um diretório chamado equipes, dentro de equipes, criei um arquivo html, com o nome de paulo.html
+
+<!--Link de diretórios-->
+<a href="equipe/paulo.html">Paulo Henrique</a>
+
+
+
+Para ter um link, retornando para a página de index01.html, basta criar um link:
+<!--Link com o caminho do diretório index01-->
+
+<a href="../index01.html">Voltar para a principal</a>
+
