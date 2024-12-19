@@ -1,0 +1,17 @@
+Em HTML, as tags de citação são usadas para destacar citações ou referências de texto. 
+Elas ajudam a identificar conteúdo que foi citado de outra fonte, seja uma citação curta ou longa. 
+
+Aparece um balão com a referencia de onde é a frase
+<p>Tudo posso naquele que me fortalece <abbr title="Filipenses 4:13">Passagem...</abbr></p>
+
+
+Tag usada para informar endereço, url, número de telefone
+<addres>
+  Rua da Graça de Deus número 7
+</addres>
+
+
+
+Tag utilizada para colocar a referencia de quem falou ou escreveu tal frase
+<p><q>O caminho para alcançar a paz não é o da ocultação de convicções, 
+e sim o da expressão honesta delas no poder do Espírito Santo.</q><cite>Charles Spuergeon</cite></p>
