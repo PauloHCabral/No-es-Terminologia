@@ -8,3 +8,5 @@ Para inserir imagens no arquivo html
 a tag <img src="imagem.jpg"alt="descrição da foto" ela não fecha <>, se tiver mais imagens na página, é recomendado fechar.
 
 
+Atributo de largura e altura das imagens:
+ <img src="img/Novo Projeto.png"alt="Estrela de natal" width="Valor númerico da largura" height="Valor númerico da altura"
