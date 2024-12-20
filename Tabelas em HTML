@@ -1,1 +1,49 @@
+Criando uma tabela em html:
 
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+</head>
+<body style="background-color:chartreuse">
+    <h1>Tabelas de carros</h1>
+
+<!-- Inicia com a tag table de tabela
+    <table> 
+<
+        <tr>
+            <th>Nome</th>
+            <th>Tipo</th>
+            <th>Cor</th>
+            <th>Ano</th>
+
+        </tr>
+
+        <tr>
+            <td>Corsa</td>
+            <td>Heach</td>
+            <td>Preto</td>
+            <td>2010</td>
+        </tr>
+
+
+    </table>
+    
+</body>
+</html>
+
+
+
+
+
+
+Explicação das Tags:
+<table>: Define o início e o fim da tabela.
+<thead>: Contém o cabeçalho da tabela.
+<tr>: Representa uma linha da tabela.
+<th>: Define uma célula do cabeçalho da tabela (tipicamente em negrito e centralizada).
+<tbody>: Contém o corpo principal da tabela, com os dados.
+<td>: Define uma célula de dados na tabela.
+<tfoot>: Contém o rodapé da tabela (opcional).
