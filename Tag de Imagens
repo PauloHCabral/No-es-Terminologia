@@ -1,1 +1,10 @@
+Para inserir imagens no arquivo html
+
+     <img src="img/feliz-natal-em-portugues_882585-1609.jpg">
+    <img src="img/uma-vista-deslumbrante-da-paisagem-natural-da-praia_23-2151683030.avif"width="300"alt="Imagem de natal">
+    <img src="img/Novo Projeto.png"alt="Estrela de natal"
+
+
+a tag <img src="imagem.jpg"alt="descrição da foto" ela não fecha <>, se tiver mais imagens na página, é recomendado fechar.
+
 
