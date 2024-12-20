@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listas</title>
+</head>
+<body>
+
+    <h2>Listas Não Ordenadas</h2>
+
+    <ul>
+        <li>Pneu</li>
+        <li>Oleo de Motor</li>
+        <li>Correia Dentada</li>
+        <li>Parachoque corsa heach frente montana</li>
+        <li>Som com bluetooth</li>
+        <li>Tela de LCD</li>
+        <li>Alarme</li>
+        <li>Nitro</li>
+        <li>Suspenção dianteiras e traseiras</li>
+        <li>Polimento</li>
+        <li>Envelopamento</li>
+    </ul>
+
+    <h2>Listas Ordenadas</h2>
+
+    <ol>
+        <li>Parachoque</li>
+        <li>Suspenção</li>
+        <li>Oleo do Motor</li>
+        <li>Pastilhas de freios dianteiros e traseiros</li>
+        <li>Cabo de aço freio de mão</li>
+        <li>Correia dentada</li>
+        <li>Limpeza de bicos</li>
+        <li>Som bluethooth</li>
+        <li>Tela de LCD</li>
+        <li>2 Cornetas de Som</li>
+        <li>Polimento</li>
+        <li>Envelopamento</li>
+    </ol>
+    
+</body>
+</html>
