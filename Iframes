@@ -1,1 +1,42 @@
+Um iframe (ou "inline frame") em HTML é um elemento que permite incorporar outra página web dentro de uma página principal. Ele é frequentemente usado para exibir conteúdos como vídeos, mapas ou outras páginas web em uma área delimitada dentro de uma página maior.
 
+A sintaxe básica de um iframe é:
+
+<iframe src="URL_DO_CONTEÚDO" width="LARGURA" height="ALTURA"></iframe>
+
+
+Atributos Comuns do <iframe>
+src: Especifica o URL da página que será carregada dentro do iframe.
+width: Define a largura do iframe (em pixels ou porcentagem).
+height: Define a altura do iframe (em pixels ou porcentagem).
+title: Descreve o conteúdo do iframe para acessibilidade.
+allow: Define permissões para recursos específicos (ex.: geolocalização, câmera, etc.).
+frameborder: Especifica se o iframe terá borda (obsoleto em HTML5, substituído por CSS).
+allowfullscreen: Permite que o iframe seja exibido em tela cheia (frequentemente usado em vídeos).
+sandbox: Adiciona restrições de segurança ao conteúdo carregado.
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de Iframe</title>
+</head>
+<body>
+    <h1>Exemplo de Iframe</h1>
+    <iframe src="https://www.example.com" width="600" height="400" title="Exemplo"></iframe>
+</body>
+</html>
+
+Inserindo a página do Youtube
+<iframe 
+    width="560" 
+    height="315" 
+    src="https://www.youtube.com/embed/VIDEO_ID" 
+    title="YouTube video player" 
+    frameborder="0" 
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+    allowfullscreen>
+</iframe>
