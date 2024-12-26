@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulários</title>
+    <!--link rel="stylesheet" href="estilo.css"-->
 </head>
 <body style="background-color:blueviolet">
-    <h1>Formulário Aqui</h1>
+    <h1>Formulário</h1>
 
     <form>
         <!--Legenda para nome-->
@@ -24,18 +24,60 @@
         <label for="e-mail">Email</label>
         <input id="e-mail"type="email" placeholder="Digite seu e-mail aqui" required>
         <br><br>
-    
+
+        <h3>Em qual cidade você nasceu  ?</h3>
+        <!-- Inserindo o radio, para selecionar apenas uma opção em uma formulário-->
+        <input type="radio"id="city" name="Cidade" value="São Paulo">
+        <label for="Cidade">São Paulo</label> <br><br><br>
+
+
+        <input type="radio"id="city" name="Cidade" value="Rio de Janeiro">
+        <label for="Cidade">Rio de Janeiro</label> <br><br><br>
+
+
+        <input type="radio"id="city" name="Cidade" value="Campos do Jordão">
+        <label for="Cidade">Campos do Jordão</label> <br><br><br>
 
         <!-- inserindo botão de enviar formulário com o submit-->
         <input type="submit" value="Enviar Formulário">
-        
+
+        <h2>O que você tem em casa ?</h2>
+        <!--Inserindo o checkbox, podendo selecionar mais de uma opção do formulário-->
+        <input id="item1" type="checkbox" name="item1" value="TV">
+        <label for="item1">TV</label><br><br><br>
+
+        <input id="item2" type="checkbox" name="item2" value="Compuador">
+        <label for="item2">Computador</label><br><br><br>
+
+        <input id="item3" type="checkbox" name="item3" value="Geladeira">
+        <label for="item3">Geladeira</label>
+
+
+        <h2>Escolha uma cor:</h2>
+        <!--Usando o select para criar uma caixa de seleção de cores no formulário-->
+        <select name="cores">
+            <option selected disabled value="Selecione uma cor">Selecione uma cor</option>
+            <option value="Azul">Azul</option>
+            <option value="Verde">Verde</option>
+            <option value="Amarelo">Amarelo</option>
+            <option value="Vermelho">Vermelho</option>
+        </select>
+
+        <h2>Digite seu mensagem</h2>
+
+        <textarea name="Mensagem" placeholder="Digite aqui sua mensagem"rows="15" cols="55"></textarea>
+        <br><br>
+
+
 
     </form><br><br>
+    
 
-
-    <a href="index.html"> Voltar para a página principal </a>
+    <!--Criei um botão com o <button>Dentro do link de outro página que está dentro do projeto formluários.html</button>-->
+    <button><a href="index.html"> Voltar para a página principal </button>
     
 
     
 </body>
 </html>
+
