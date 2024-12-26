@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+</head>
+<body style="background-color:blueviolet">
+    <h1>Formulário Aqui</h1>
+
+    <form>
+        <!--Legenda para nome-->
+        <label for="campo_nome">Nome:</label>
+        <input id="campo_nome"type="text" placeholder="Digite seu nome aqui" required><br>
+
+        <br>
+        <!--Legenda para sobrenome-->
+        <label for="sobre_nome">Sobrenome</label>
+        <input id="sobre_nome"type="text" placeholder="Digite seu Sobrenome aqui" riquired><br>
+        <br>
+
+        <!--Legenda para senha-->
+        <label for="campo_senha">Senha</label>
+        <input id="campo_senha"type="password" placeholder="Digite sua senha aqui" riquired><br>
+        <br>
+        
+        <!--Legenda para o email-->
+        <label for="campo_e-mail">Email</label>
+        <input id="e-mail"type="e-mail" placeholder="Digite seu e-mail aqui" riquired><br>
+        <br><br>
+    
+
+        <!-- inserindo botão de enviar o formulário com o submit-->
+        <input type="submit" value="Enviar Formulário" required>
+    </form><br><br>
+
+    <a href="index.html"> Voltar para a página principal </a>
+    
+
+    
+</body>
+</html>
