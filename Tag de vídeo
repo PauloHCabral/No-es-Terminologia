@@ -1,0 +1,22 @@
+!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video</title>
+</head>
+<body>
+    <h2>Adicionando video ao nosso site</h2>
+    <!-- link da página principal-->
+    <a href="index01.html">Página de Natal</a>
+
+
+    <!-- baixei o video, inseri o donwload na pasta aonde o arquivo index está-->
+    <video poster="feliz-natal-em-portugues_882585-1609.jpg" width="100%" controls controlsList="nodownload"> 
+        <source src="vecteezy_background-video-merry-christmas-hd-loop_4984757.mov">Vídeo</video>
+    </video>
+
+
+    
+</body>
+</html>
