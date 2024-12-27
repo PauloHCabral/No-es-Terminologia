@@ -1,0 +1,17 @@
+!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Áudio</title>
+</head>
+<body>
+    <a href="index01.html">Voltar para a página de natal</a>
+
+    <h2>Página de Áudio</h2>
+    <!--Adiciona o audio com o controle de play, volume, controlsList="nodownload"serve para bloquear o download-->
+    <audio controls controlsList="nodownload">
+        <source src="jingle-bells-swinging-jazz-version-273940.mp3"</audio>
+    </audio>
+</body>
+</html>
