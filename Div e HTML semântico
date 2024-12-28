@@ -1,6 +1,3 @@
-Div são tags neutras usadas para criar divisões no site.
-
-
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -83,21 +80,25 @@ Div são tags neutras usadas para criar divisões no site.
     
     <!--Tag Semântica de seção<section class="Coluna"></section>-->
     <section class="coluna-50">
+        <article>
         <h2>Coluna</h2>
         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Adipisci, aliquam. 
             Fugit aliquam maxime, sit iusto est mollitia modi blanditiis necessitatibus, 
             quidem ea asperiores excepturi obcaecati veniam laboriosam amet sapiente voluptatem.</p>
+        </article>
         
     </section>
 
     
 
     <div class="coluna-50"> 
+        <article>
         <h2>Coluna</h2>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
             Ipsam consequuntur dignissimos cum recusandae doloribus. L
             ibero doloremque sed enim, rem mollitia praesentium. 
             Blanditiis odio soluta quos optio temporibus quaerat rerum expedita.</p>
+         </article>
     </div>
 
     
