@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Interno</title>
+    <style>
+
+        /*Estilizando o fundo */
+        body {
+
+            background:yellow;
+        }
+
+
+        /*Estilizando todos os h1 da página*/
+        h1 { 
+
+            color:blue;
+            font-size:88px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Meu Segundo site com CSS</h1>
+    <h2>Outro título</h2>
+</body>
+</html>
