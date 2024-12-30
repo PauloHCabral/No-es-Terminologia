@@ -1,0 +1,34 @@
+Use background-color quando você só precisar de uma cor sólida no fundo.
+Use background para configurar múltiplos aspectos do fundo de uma só vez
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--Link do arquivo externo CSS-->
+    <link rel="stylesheet" href="estilo.css">
+   
+</head>
+<body>
+    <h1>Meu site com CSS</h1>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto repudiandae voluptatum laudantium voluptatem,
+        quisquam est tenetur natus odio inventore omnis ex beatae consequuntur, officia blanditiis? 
+        Odit natus laboriosam officiis voluptas!</p>
+    
+</body>
+</html>
+
+
+
+Observação: O CSS opera com base em hierarquia, priorizando estilos inline dentro de tags específicas. 
+Se não houver estilos inline, o CSS considera os estilos definidos em um bloco <style> na mesma página HTML.
+
+Resumo do Entendimento
+Inline (dentro da tag): Prioridade mais alta.
+Estilo interno (<style>): Vem depois, se não houver inline.
+Arquivo externo (.css): Aplica-se se não houver estilos inline ou internos que sobreponham.
+Mais específico > Última regra > !important pode mudar tudo.
