@@ -1,0 +1,60 @@
+A propriedade color no CSS é usada para definir a cor do texto de um elemento. 
+Ela é uma das propriedades mais básicas e amplamente utilizadas no design de páginas web.
+
+Color é a propriedade do texto
+
+Valores aceitos:
+Palavras-chave:
+
+Exemplos: red, blue, green, black, white.
+p {
+   color: red;
+
+}
+
+
+Códigos Hexadecimais:
+
+Exemplos: #FF0000 (vermelho), #0000FF (azul), #00FF00 (verde).
+css
+
+p {
+    color: #FF0000;
+}
+
+
+Valores RGB:
+
+Formato: rgb(255, 0, 0) (vermelho), onde os números representam as intensidades de vermelho, verde e azul (0 a 255).
+css
+
+p {
+    color: rgb(255, 0, 0);
+}
+Valores RGBA:
+
+Como o RGB, mas inclui um canal de opacidade (alpha), que varia de 0 (transparente) a 1 (opaco).
+css
+
+p {
+    color: rgba(255, 0, 0, 0.5); /* Vermelho com 50% de transparência */
+}
+Valores HSL:
+
+Formato: hsl(0, 100%, 50%), onde:
+h é o matiz (0 a 360 graus).
+s é a saturação (0% a 100%).
+l é a luminosidade (0% a 100%).
+css
+
+p {
+    color: hsl(0, 100%, 50%);
+}
+Valores HSLA:
+
+Como o HSL, mas inclui o canal de opacidade (alpha).
+css
+
+p {
+    color: hsla(0, 100%, 50%, 0.5);
+}
