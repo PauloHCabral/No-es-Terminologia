@@ -1,0 +1,80 @@
+Com a class, podemos definir estilos específicos, em um elemento ou mais de uma vez só.
+
+Como usar o seletor de classe?
+
+No HTML: Você atribui uma classe a um elemento usando o atributo class.
+No CSS: Você seleciona essa classe utilizando um ponto (.) seguido do nome da classe.
+
+Vantagens de usar classes:
+
+Reutilizável: Você pode aplicar a mesma classe a vários elementos, o que facilita o uso consistente de estilos.
+Específico e controlado: É possível estilizar apenas os elementos que você deseja, sem afetar outros.
+Nota: Diferente de IDs, que são únicos por página, as classes podem ser usadas em múltiplos elementos. Isso as torna ideais para estilização reutilizável.
+
+ID é utilizado em HTML e CSS, mas de forma mais limitada em comparação às classes, devido à sua natureza exclusiva. 
+Ele é ideal para identificar elementos únicos em uma página, onde apenas um elemento deve ter o mesmo ID.
+
+
+Em CSS, um "elemento coringa" refere-se ao seletor universal *. Este seletor pode ser usado para selecionar todos os elementos de um documento HTML, 
+independentemente de tipo, classe, ID ou outro atributo.
+
+Como usar o seletor coringa (*)?
+O seletor * pode ser útil em várias situações, como a aplicação de estilos globais ou a redefinição de margens e preenchimentos padrão de todos os elementos.
+
+Exemplo básico:
+
+css
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+Explicação:
+margin: 0; padding: 0;:Remove as margens e os preenchimentos padrão de todos os elementos (útil para normalizar estilos entre navegadores).
+
+box-sizing: border-box;: Altera o modelo de caixa para todos os elementos, incluindo bordas e preenchimentos no cálculo da largura e altura.
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+    <title>Seletores e Classes </title>
+</head>
+<body>
+    <h1 class="center">Seletores e Classes em CSS</h1>
+
+      
+        <p class="center">Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+           Iusto iste aut aliquid dolore totam tempore fuga ea sed distinctio voluptatibus perferendis illo, 
+           earum consectetur voluptates quos dolorum quidem laborum quia.</p>
+
+        <p class="center">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam enim dignissimos, 
+           animi iusto mollitia quae fugiat veritatis quod corrupti,
+           dolore nisi? Modi, impedit repellat? Earum et odio vero nihil libero?</p>
+
+        <p class="center">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias consequuntur consequatur non, 
+           laboriosam cum recusandae adipisci quaerat! Ipsum vitae consequatur natus vel, 
+           voluptate, voluptates reprehenderit placeat expedita cupiditate ad ullam?</p>
+
+        <p class="center">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet iure tenetur, eos delectus dolor quidem omnis obcaecati. 
+           Facilis reiciendis quae eos dolores exercitationem dolore consectetur, atque, earum neque, nihil aut!</p>
+    
+       
+           <button><a href="outa_pagina.html">< Outra página/a></button>
+    
+</body>
+</html>
+
+
+
+
+Agrupamento de Seletores em CSS
+
+h1, p {
+    color: red;
+    text-align: center;
+}
