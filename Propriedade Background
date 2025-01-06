@@ -1,0 +1,31 @@
+Background significar o que fica atrás, mudar a cor de fundo ou uma imgem.
+na tag <body> </body>
+
+em CSS:
+
+/* Muda a cor de fundo da página inteira para cor agua */
+body {
+   background-color: agua;
+}
+
+
+CSS
+
+.imagem-fundo{
+    height: 970px;
+    background-color: gray;
+    background-image: url(pexels-caleb-falkenhagen-216813613-30007672.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+
+
+HTML:
+<!--Criei uma div class, para estilizar uma imagem na página com o CSS-->
+
+         <div class="imagem-fundo">
+            
+         </div>
+    
