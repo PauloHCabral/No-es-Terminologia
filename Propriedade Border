@@ -1,0 +1,107 @@
+As propriedades de bordas no CSS são amplamente utilizadas para estilizar e controlar a aparência das bordas de elementos HTML. 
+Aqui estão as mais usadas:
+
+
+1. border
+Define todas as propriedades da borda (largura, estilo e cor) em uma única declaração.
+Exemplo:
+
+css
+Copiar código
+border: 2px solid #000; /* largura, estilo e cor */
+2. border-width
+Define a largura da borda.
+Valores comuns: thin, medium, thick ou valores em unidades específicas (px, em, %).
+Exemplo:
+
+css
+Copiar código
+border-width: 5px;
+3. border-style
+Define o estilo da borda.
+Valores comuns:
+
+solid (linha sólida)
+dashed (tracejada)
+dotted (pontilhada)
+double (linha dupla)
+groove, ridge, inset, outset (estilizações 3D)
+none (sem borda)
+Exemplo:
+
+css
+Copiar código
+border-style: dashed;
+4. border-color
+Define a cor da borda.
+Pode ser definida em cores nomeadas, hexadecimal, RGB, ou HSL.
+Exemplo:
+
+css
+Copiar código
+border-color: blue;
+5. border-radius
+Arredonda os cantos da borda.
+Aceita valores em unidades (px, %, etc.).
+Exemplo:
+
+css
+Copiar código
+border-radius: 10px; /* cantos arredondados */
+border-radius: 50%; /* borda circular */
+6. Propriedades individuais para cada lado
+Permitem personalizar bordas de lados específicos:
+
+border-top
+border-right
+border-bottom
+border-left
+Cada uma pode ser usada com largura, estilo e cor.
+Exemplo:
+
+css
+Copiar código
+border-top: 3px solid red;
+border-right: 2px dashed blue;
+7. Propriedades de atalho para lados específicos
+border-top-width, border-right-style, etc., para controle detalhado.
+Exemplo completo:
+css
+Copiar código
+div {
+  border: 3px solid #000;
+  border-radius: 15px;
+  border-top: 5px dashed red;
+}
+Essas propriedades permitem criar bordas simples ou estilizações mais avançadas com facilidade.
+
+h1,p {
+ color:red;
+    border-top: 5px solid rgb(4,255,66);
+    border-left:5px solid black;
+    border-right:5px solid rgb(255,4,4);
+    border-radius: 20px;
+    text-align:center;
+    background-color:greenyellow;
+}
+
+
+podemos declarar em uma linha, quando que queremos mudar, a distãncia do top,direita,parte de baixo,esquerda, em uma linha:
+
+/* A sequencia é: topo, direita, para baixo, esquerda.
+h1 {
+  margin: 30px 20px 20px 30px
+
+}
+
+/* Separando os parágrafos */
+
+p {
+    color: red;
+    margin-bottom: 20px;
+    margin-left: 30px;
+    margin-right: 30px;
+
+
+
+}
