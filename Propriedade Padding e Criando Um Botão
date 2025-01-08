@@ -1,0 +1,48 @@
+/* Ou podemos usar para alinhar: topo, direita, parte de baixo e esquerda, na mesma linha:display: */
+    margin: 30px 20px 20px 30px;
+    /* A propriedade padding-top, define o espaçamento interno ou preenchimento, na parte superior do elemento e sia borda */
+    padding-top: 50px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    /* fazendo a estilização em apenas uma linha */
+    padding: 50px 70px  20px 10px;
+
+ }
+
+
+.center{
+    text-align:center;
+}
+
+
+
+.imagem-fundo{
+    height: 900px;
+    background-color: gray;
+    background-image: url(pexels-caleb-falkenhagen-216813613-30007672.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-bottom: 50px;
+    border-radius: 20px;
+    text-decoration: none;
+
+}
+
+
+
+.botao {
+    margin-left: 10%;
+    background:blueviolet;
+    color: white;
+    padding-top: 10px;
+    border-radius: 15px;
+
+
+}
+
+
+.botao:hover{
+    background:crimson;
+}
