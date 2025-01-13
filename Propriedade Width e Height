@@ -1,0 +1,8 @@
+
+.teste{
+    max-width: 800px; /* Usado para definir um limite de largura. É utilizado no desenvolvimento de dispositivos móveis e em elementos responsivos que se adaptam ao tamanho da tela ou janela. */
+    width:300px; /* Largura */
+    height:300px; /* Altura */
+    background: rebeccapurple; /* Colorindo o parágrafo*/
+    
+}
