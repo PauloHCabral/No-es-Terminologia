@@ -1,0 +1,32 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+
+.Paragrafo{
+    font-family:"Dancing Script", serif;
+    font-size: 50px;
+    font-weight: 300;
+
+}
+
+
+
+
+CSS
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+Esta linha importa uma fonte externa do Google Fonts. A fonte específica que está sendo importada é "Dancing Script", e o código especifica que deseja importar todos os pesos de fonte de 400 a 700. A propriedade "display" está definida como "swap", o que indica ao navegador que ele pode substituir a fonte do sistema pela fonte importada o mais rápido possível.
+
+CSS
+
+.Paragrafo {
+  font-family: "Dancing Script", serif;
+  font-size: 50px;
+  font-weight: 300;
+}
+Esta parte do código define o estilo real do parágrafo. Ele usa a classe CSS ".Paragrafo" para selecionar todos os elementos HTML que possuem essa classe.
+
+Dentro da classe ".Paragrafo", existem três propriedades definidas:
+
+font-family: Esta propriedade define a fonte que deve ser usada para o texto do parágrafo. Ele define "Dancing Script" como a fonte principal e "serif" como fonte fallback, caso "Dancing Script" não esteja disponível.
+font-size: Esta propriedade define o tamanho da fonte do texto do parágrafo como 50 pixels.
+font-weight: Esta propriedade define o peso da fonte do texto do parágrafo como 300. Isso corresponde a um peso de fonte "leve".
