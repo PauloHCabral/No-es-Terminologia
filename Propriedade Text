@@ -1,0 +1,43 @@
+
+.Paragrafo{
+    color: red;
+    text-align:left;
+    direction:rtl;
+    text-decoration: underline;
+    text-transform:capitalize;
+    text-indent: 60px;
+    letter-spacing: 5px;
+    line-height:1.9;
+    word-spacing:32px;
+}
+
+
+
+.Paragrafo { ... } Isso define uma classe CSS chamada "Paragrafo". Qualquer elemento HTML com a classe "Paragrafo" será estilizado de acordo com as regras dentro dessas chaves.
+color: red;
+
+Define a cor do texto dentro do parágrafo como vermelho.
+text-align: left;
+
+Alinha o texto à esquerda do seu contêiner.
+direction: rtl;
+
+Define a direção do texto como da direita para a esquerda. Isso significa que o texto fluirá da direita para a esquerda, o que é comum em idiomas como hebraico e árabe.
+text-decoration: underline;
+
+Adiciona um sublinhado ao texto.
+text-transform: capitalize;
+
+Coloca a primeira letra de cada palavra do texto em maiúscula.
+text-indent: 60px;
+
+Indenta a primeira linha do parágrafo em 60 pixels.
+letter-spacing: 5px;
+
+Aumenta o espaço entre cada letra em 5 pixels.
+line-height: 1.9;
+
+Define a altura da linha como 1,9 vezes o tamanho da fonte. Isso aumenta o espaçamento vertical entre as linhas de texto.
+word-spacing: 32px;
+
+Aumenta o espaço entre cada palavra em 32 pixels.
