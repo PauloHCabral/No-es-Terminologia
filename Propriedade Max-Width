@@ -1,0 +1,69 @@
+A propriedade max-width no CSS é usada para definir a largura máxima que um elemento pode ocupar. 
+Ela é útil para criar layouts responsivos e evitar que o conteúdo se estenda além de um limite desejado.
+
+
+A propriedade max-width no CSS é usada para definir a largura máxima que um elemento pode ocupar. Ela é útil para criar layouts responsivos e evitar que o conteúdo se estenda além de um limite desejado.
+
+Como Funciona
+Sintaxe:
+
+css
+Copiar
+Editar
+elemento {
+    max-width: valor;
+}
+Valores Possíveis:
+
+auto: Define a largura máxima com base no conteúdo ou no contêiner pai. (Padrão)
+Unidades Absolutas (ex.: px, cm, mm): Especifica um valor fixo.
+Unidades Relativas (ex.: %, em, rem, vw): Define a largura máxima com base no tamanho do contêiner ou viewport.
+none: Sem limite de largura máxima.
+Exemplos
+Evitar que imagens ocupem mais espaço do que o contêiner:
+
+html
+Copiar
+Editar
+<img src="imagem.jpg" alt="Exemplo de Imagem" style="max-width: 100%;">
+Explicação:
+
+A imagem nunca será maior que o contêiner pai.
+O valor 100% ajusta a largura máxima relativa ao contêiner.
+Criar um layout centralizado com largura máxima:
+
+html
+Copiar
+Editar
+<div class="container">
+    <p>Este é um exemplo com max-width.</p>
+</div>
+
+<style>
+    .container {
+        max-width: 800px;
+        margin: 0 auto; /* Centraliza horizontalmente */
+        padding: 20px;
+        background: #f0f0f0;
+    }
+</style>
+Explicação:
+
+O contêiner terá, no máximo, 800px de largura.
+Se a viewport for menor que 800px, o contêiner se ajustará automaticamente.
+Combinar com min-width:
+
+css
+Copiar
+Editar
+.box {
+    min-width: 300px;
+    max-width: 600px;
+}
+Explicação:
+
+O elemento terá pelo menos 300px e, no máximo, 600px de largura.
+Quando Usar max-width?
+Para criar layouts fluidos e responsivos.
+Para evitar que imagens ou vídeos ocupem mais espaço do que o necessário.
+Para limitar a largura de texto e melhorar a legibilidade.
