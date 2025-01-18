@@ -1,0 +1,111 @@
+A propriedade Display, específica se e como o nosso elemento vai ser exibido:
+
+
+A propriedade display é uma das mais importantes no CSS, usada para controlar como os elementos HTML devem ser exibidos na página. Ela define o comportamento do layout de um elemento e influencia sua relação com outros elementos na mesma página.
+
+Valores Comuns de display
+block
+
+O elemento é exibido como um bloco.
+Ocupa toda a largura disponível.
+Inicia em uma nova linha.
+Exemplos de elementos que são block por padrão: <div>, <p>, <h1>.
+css
+Copiar
+Editar
+div {
+    display: block;
+}
+inline
+
+O elemento é exibido na mesma linha que outros elementos adjacentes.
+Apenas ocupa a largura necessária para seu conteúdo.
+Exemplos: <span>, <a>, <strong>.
+css
+Copiar
+Editar
+span {
+    display: inline;
+}
+inline-block
+
+Combina características de block e inline.
+O elemento é exibido na mesma linha que outros, mas pode ter dimensões definidas (altura e largura).
+css
+Copiar
+Editar
+img {
+    display: inline-block;
+}
+none
+
+Oculta o elemento completamente.
+Ele não aparece na página e não ocupa espaço no layout.
+css
+Copiar
+Editar
+.hidden {
+    display: none;
+}
+flex
+
+Define o elemento como um contêiner flexível.
+Permite criar layouts responsivos com alinhamento dinâmico de itens internos.
+css
+Copiar
+Editar
+.container {
+    display: flex;
+}
+grid
+
+Define o elemento como um contêiner de grade.
+Facilita a criação de layouts baseados em linhas e colunas.
+css
+Copiar
+Editar
+.grid-container {
+    display: grid;
+}
+inline-flex e inline-grid
+
+Variantes dos valores flex e grid, mas o contêiner se comporta como inline.
+css
+Copiar
+Editar
+.inline-flex-container {
+    display: inline-flex;
+}
+Exemplos Práticos
+Criar uma barra de navegação:
+
+html
+Copiar
+Editar
+<nav>
+    <ul>
+        <li>Home</li>
+        <li>About</li>
+        <li>Contact</li>
+    </ul>
+</nav>
+
+<style>
+    nav ul {
+        display: flex;
+        list-style: none;
+        gap: 10px;
+    }
+</style>
+Ocultar um elemento:
+
+html
+Copiar
+Editar
+<div class="hidden">Este texto não será visível.</div>
+
+<style>
+    .hidden {
+        display: none;
+    }
+</style>
