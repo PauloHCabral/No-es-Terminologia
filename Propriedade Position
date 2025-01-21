@@ -1,0 +1,64 @@
+A propriedade position no CSS é usada para especificar o método de posicionamento de um elemento em um documento. Ela define como um elemento é posicionado em relação ao seu container, à página ou a outros elementos.
+
+Os valores principais de position são:
+
+1. static (Padrão)
+Os elementos são posicionados de acordo com o fluxo normal do documento.
+Não podem ser alterados por propriedades como top, right, bottom, ou left.
+É o valor padrão de todos os elementos.
+css
+Copiar
+Editar
+.element {
+  position: static;
+}
+2. relative
+O elemento é posicionado em relação à sua posição original (no fluxo do documento).
+As propriedades top, right, bottom, e left deslocam o elemento a partir de sua posição inicial, sem afetar outros elementos.
+css
+Copiar
+Editar
+.element {
+  position: relative;
+  top: 20px;
+  left: 10px;
+}
+3. absolute
+O elemento é posicionado em relação ao seu primeiro container posicionado (o ancestral mais próximo com position diferente de static).
+O elemento é removido do fluxo normal, o que significa que não afeta o layout dos elementos ao seu redor.
+css
+Copiar
+Editar
+.element {
+  position: absolute;
+  top: 50px;
+  left: 30px;
+}
+4. fixed
+O elemento é posicionado em relação à janela do navegador e não se move quando a página é rolada.
+Também é removido do fluxo normal.
+css
+Copiar
+Editar
+.element {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+}
+5. sticky
+O elemento alterna entre relative e fixed dependendo do scroll.
+Ele se comporta como relative até atingir um ponto definido (usando top, right, etc.) e então se "fixa" como fixed.
+css
+Copiar
+Editar
+.element {
+  position: sticky;
+  top: 0;
+}
+Comparação rápida:
+Valor	Em relação a...	Remove do fluxo?	Rola com a página?
+static	Fluxo normal do documento	Não	Sim
+relative	Posição normal do elemento	Não	Sim
+absolute	Container posicionado mais próximo	Sim	Não
+fixed	Janela do navegador	Sim	Não
+sticky	Combinação de fluxo e posição fixa	Não	Sim
