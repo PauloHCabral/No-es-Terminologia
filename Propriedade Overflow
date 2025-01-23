@@ -1,0 +1,62 @@
+A propriedade overflow no CSS é usada para definir o que acontece quando o conteúdo de um elemento excede o tamanho do contêiner. Ela controla como o conteúdo extra será exibido ou escondido.
+A propriedade overflow, só funciona, se determinarmos um tamanho para o nosso elemento.
+overflow é utilizado, para determinar o comportamento da barra de rolagem da nossa página.
+
+
+Sintaxe
+css
+Copiar
+Editar
+overflow: visible | hidden | scroll | auto | clip;
+Valores possíveis
+visible (padrão):
+
+O conteúdo que exceder o contêiner será exibido além dos limites do elemento.
+Exemplo:
+css
+Copiar
+Editar
+overflow: visible;
+hidden:
+
+O conteúdo que exceder o contêiner será ocultado, e não será possível acessá-lo.
+Exemplo:
+css
+Copiar
+Editar
+overflow: hidden;
+scroll:
+
+Sempre adiciona barras de rolagem (horizontal e/ou vertical), independentemente de o conteúdo ultrapassar o tamanho do contêiner ou não.
+Exemplo:
+css
+Copiar
+Editar
+overflow: scroll;
+auto:
+
+Adiciona barras de rolagem somente se o conteúdo ultrapassar o tamanho do contêiner.
+Exemplo:
+css
+Copiar
+Editar
+overflow: auto;
+clip:
+
+Similar ao hidden, mas sem criar uma área de rolagem acessível (o conteúdo excedente é cortado e inacessível).
+Exemplo:
+css
+Copiar
+Editar
+overflow: clip;
+Propriedades relacionadas
+overflow-x: Controla o transbordamento horizontal (eixo X).
+overflow-y: Controla o transbordamento vertical (eixo Y).
+Exemplo prático
+html
+Copiar
+Editar
+<div style="width: 200px; height: 100px; border: 1px solid black; overflow: auto;">
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin a urna ac erat aliquet posuere.
+</div>
+Nesse exemplo, o conteúdo que exceder o tamanho do contêiner poderá ser acessado através de barras de rolagem.
