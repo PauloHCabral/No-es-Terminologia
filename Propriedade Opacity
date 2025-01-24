@@ -1,0 +1,26 @@
+O que é a propriedade opacity em CSS?
+
+A propriedade opacity em CSS controla a transparência de um elemento.
+Valores válidos:
+0.0: Totalmente transparente (invisível)
+1.0: Totalmente opaco (visível)
+Valores entre 0.0 e 1.0: Níveis intermediários de transparência
+Exemplo:
+
+CSS
+
+.elemento-transparente {
+  opacity: 0.5; /* 50% de transparência */
+}
+Como funciona:
+
+A opacity afeta todos os elementos filhos do elemento ao qual é aplicado.
+Se você deseja aplicar transparência apenas a um elemento específico e não aos seus filhos, considere usar background-color: rgba(r, g, b, a); (onde 'a' é o valor de alfa para transparência).
+Observações:
+
+A opacity pode afetar a legibilidade do texto, especialmente se o fundo for muito claro ou muito escuro.
+A opacity pode ter efeitos inesperados em elementos que usam efeitos de transição ou animação.
+Vantagens:
+
+Fácil de usar e aplicar.
+Permite controlar a transparência de maneira simples.
