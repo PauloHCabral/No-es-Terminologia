@@ -1,0 +1,40 @@
+Em CSS, a propriedade float é usada para fazer com que um elemento "flutue" para a esquerda (float: left) ou para a direita (float: right) de seu contêiner. Isso significa que o elemento é removido do fluxo normal do documento e posicionado ao lado do conteúdo adjacente.
+
+Usos comuns da propriedade float:
+
+Criar layouts de duas colunas: Posicione dois elementos lado a lado, com texto ou outros elementos fluindo ao redor deles.
+Alinhar imagens e texto: Posicione uma imagem à esquerda ou à direita do texto, permitindo que o texto flua ao redor dela.
+Criar menus horizontais: Posicione itens de menu lado a lado.
+Exemplo:
+
+HTML
+
+<div class="container">
+  <div class="image-container">
+    <img src="image.jpg" alt="Imagem">
+  </div>
+  <div class="text-container">
+    <p>Este é o texto que flui ao redor da imagem.</p>
+  </div>
+</div>
+
+<style>
+.container {
+  width: 800px;
+  margin: 0 auto;
+}
+
+.image-container {
+  float: left;
+  width: 300px;
+  margin-right: 20px;
+}
+
+.text-container {
+  /* Não é necessário definir float para o texto, pois ele flui naturalmente ao redor da imagem */
+}
+</style>
+Observações:
+
+A propriedade float pode causar problemas com o layout se não for usada corretamente. É importante limpar os floats usando técnicas como a classe clearfix para evitar que afetem outros elementos da página.
+Atualmente, técnicas como flexbox e grid são mais recomendadas para criar layouts complexos, pois oferecem mais controle e flexibilidade do que a propriedade float.
