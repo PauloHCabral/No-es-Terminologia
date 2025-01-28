@@ -1,4 +1,23 @@
 
+A orden das tags mais fortes que o navegador prioriza
+
+#id {
+
+}
+
+tag.class
+tipo: h1.class{
+}
+
+.class {
+
+}
+
+tag {
+
+}
+
+
 Especificidade em CSS é a forma como os navegadores decidem quais regras CSS aplicar quando várias regras podem ser aplicadas ao mesmo elemento. Isso acontece porque as regras podem entrar em conflito umas com as outras, então o navegador precisa determinar qual delas é mais "específica".
 
 Cada seletor CSS tem um "peso" ou valor de especificidade, baseado nos tipos de seletores usados.
