@@ -1,0 +1,41 @@
+
+Especificidade em CSS é a forma como os navegadores decidem quais regras CSS aplicar quando várias regras podem ser aplicadas ao mesmo elemento. Isso acontece porque as regras podem entrar em conflito umas com as outras, então o navegador precisa determinar qual delas é mais "específica".
+
+Cada seletor CSS tem um "peso" ou valor de especificidade, baseado nos tipos de seletores usados.
+
+Como calcular a especificidade:
+A especificidade é representada por quatro valores no formato (A, B, C, D), onde:
+
+A (ID inline): Se a regra for aplicada diretamente no atributo style de um elemento (style="color: red;"), o valor de A será 1. Esse é o mais forte.
+B (Seletores ID): O número de seletores ID (#id) na regra.
+C (Seletores de classe, pseudo-classes e atributos): O número de seletores de classe (.classe), pseudo-classes (:hover, :nth-child) e seletores de atributo ([type="text"]) na regra.
+D (Seletores de elementos e pseudo-elementos): O número de seletores de elementos (como div, h1, etc.) e pseudo-elementos (::before, ::after).
+Exemplo prático:
+css
+Copiar
+Editar
+/* Regra 1 */
+div p {
+  color: blue; /* Especificidade: (0, 0, 0, 2) */
+}
+
+/* Regra 2 */
+#header {
+  color: red; /* Especificidade: (0, 1, 0, 0) */
+}
+
+/* Regra 3 */
+.container .item {
+  color: green; /* Especificidade: (0, 0, 2, 0) */
+}
+Se um parágrafo (<p>) estiver dentro de um div com id="header" e classe .container e .item, a regra 2 será aplicada porque tem maior especificidade (ID é mais forte que classes ou elementos).
+
+Ordem de prioridade:
+Quando múltiplas regras têm a mesma especificidade, o desempate é feito pela ordem no arquivo:
+
+A última regra definida será aplicada (CSS mais abaixo no arquivo).
+Regras em arquivos externos são sobrepostas pelas internas no <style> do HTML.
+Regras inline (style="...") têm prioridade sobre regras definidas em arquivos externos ou <style>.
+Boa prática:
+Evite exagerar na especificidade. Usar muitos IDs ou seletores compostos pode dificultar a manutenção do CSS. Prefira seletores simples e use classes para reutilização e legibilidade.
+
