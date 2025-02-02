@@ -1,0 +1,72 @@
+Código da Aula para copiar:
+
+/* Smartphones (600px para baixo) */
+@media only screen and (max-width: 600px) {...}
+
+/* Dispositivos um pouco maiores, mas ainda pequenos (Pequenos Tablets e Smartphones + largos, 600px para cima) */
+@media only screen and (min-width: 600px) {...}
+
+/*Dispostivos Médios (Tablets deitados, 768px para cima) */
+@media only screen and (min-width: 768px) {...}
+
+/* Dispostivos Largos (laptops/desktops, 992px para cima) */
+@media only screen and (min-width: 992px) {...}
+
+/* Super Largos (Telas maiores laptops, desktops e até TVs, 1200px para cima) */
+@media only screen and (min-width: 1200px) {...}
+
+Neste vídeo:
+00:00 - Introdução
+00:06 - Media Queries
+19:38 - Deixa seu Like e se inscreva :)
+
+
+Media Queries em CSS são usadas para criar designs responsivos, permitindo que a aparência de uma página se adapte a diferentes tamanhos de tela, como celulares, tablets e desktops.
+
+📌 Sintaxe Básica
+css
+Copiar
+Editar
+@media (condição) {
+    /* Estilos aplicados apenas quando a condição for verdadeira */
+}
+📏 Exemplo Prático
+css
+Copiar
+Editar
+/* Estilos padrão (para telas grandes) */
+body {
+    background-color: white;
+    font-size: 18px;
+}
+
+/* Quando a largura da tela for até 768px (exemplo: tablets e celulares) */
+@media (max-width: 768px) {
+    body {
+        background-color: lightgray;
+        font-size: 16px;
+    }
+}
+
+/* Quando a largura da tela for até 480px (exemplo: celulares pequenos) */
+@media (max-width: 480px) {
+    body {
+        background-color: lightblue;
+        font-size: 14px;
+    }
+}
+🎯 Condições Comuns
+max-width → Aplica estilos quando a largura da tela for menor ou igual ao valor especificado.
+min-width → Aplica estilos quando a largura da tela for maior ou igual ao valor especificado.
+max-height / min-height → Para altura da tela.
+orientation → Para definir estilos baseados na orientação da tela (retrata/paisagem).
+prefers-color-scheme → Para detectar tema escuro ou claro.
+📱 Exemplo de Design Responsivo
+css
+Copiar
+Editar
+@media (max-width: 600px) {
+    .menu {
+        display: none; /* Oculta o menu em telas pequenas */
+    }
+}
