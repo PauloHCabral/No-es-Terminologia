@@ -1,0 +1,148 @@
+🎯 Como Usar Flexbox
+Primeiro, definimos um container flexível com display: flex; e, em seguida, utilizamos propriedades para controlar o comportamento dos itens dentro dele.
+
+1️⃣ Ativando o Flexbox
+css
+Copiar
+Editar
+.container {
+    display: flex;  /* Ativa o Flexbox */
+    background-color: lightgray;
+    padding: 10px;
+}
+
+.item {
+    background-color: steelblue;
+    color: white;
+    padding: 20px;
+    margin: 5px;
+}
+html
+Copiar
+Editar
+<div class="container">
+    <div class="item">1</div>
+    <div class="item">2</div>
+    <div class="item">3</div>
+</div>
+🔥 Propriedades Importantes
+2️⃣ Direção dos Itens - flex-direction
+Define a direção dos itens dentro do contêiner.
+
+css
+Copiar
+Editar
+.container {
+    display: flex;
+    flex-direction: row; /* Padrão: coloca os itens em linha */
+}
+Valores:
+
+row (padrão) → Itens em linha (da esquerda para a direita)
+row-reverse → Linha invertida (direita para a esquerda)
+column → Itens em coluna (de cima para baixo)
+column-reverse → Coluna invertida (de baixo para cima)
+3️⃣ Alinhamento Horizontal - justify-content
+Controla como os itens são distribuídos ao longo do eixo principal.
+
+css
+Copiar
+Editar
+.container {
+    display: flex;
+    justify-content: center; /* Centraliza os itens */
+}
+Valores:
+
+flex-start (padrão) → Alinha à esquerda
+flex-end → Alinha à direita
+center → Centraliza os itens
+space-between → Espaço igual entre os itens
+space-around → Espaço igual ao redor dos itens
+space-evenly → Espaço igual entre e nas bordas dos itens
+4️⃣ Alinhamento Vertical - align-items
+Define como os itens se comportam no eixo secundário.
+
+css
+Copiar
+Editar
+.container {
+    display: flex;
+    align-items: center; /* Centraliza os itens verticalmente */
+}
+Valores:
+
+flex-start (padrão) → Alinha ao topo
+flex-end → Alinha na parte inferior
+center → Centraliza verticalmente
+stretch → Estica os itens para ocupar toda a altura disponível
+baseline → Alinha os itens pela linha de base do texto
+5️⃣ Itens Ocupando Mais Espaço - flex-grow
+Define o quanto cada item pode crescer.
+
+css
+Copiar
+Editar
+.item {
+    flex-grow: 1; /* Todos os itens crescem igualmente */
+}
+Se quiser que um item cresça mais do que os outros:
+
+css
+Copiar
+Editar
+.item:nth-child(2) {
+    flex-grow: 2; /* Esse item cresce o dobro dos outros */
+}
+6️⃣ Tamanho Mínimo e Máximo - flex-basis
+Define um tamanho inicial antes da aplicação do flex-grow.
+
+css
+Copiar
+Editar
+.item {
+    flex-basis: 150px; /* Define um tamanho base */
+}
+7️⃣ Ordem dos Itens - order
+Muda a posição visual dos itens sem alterar o HTML.
+
+css
+Copiar
+Editar
+.item:nth-child(2) {
+    order: 3; /* Esse item vai para o final */
+}
+.item:nth-child(3) {
+    order: 1; /* Esse item vem primeiro */
+}
+🚀 Exemplo Completo
+css
+Copiar
+Editar
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 200px;
+    border: 2px solid black;
+}
+
+.item {
+    background-color: tomato;
+    color: white;
+    padding: 20px;
+    margin: 5px;
+    flex-grow: 1;
+    text-align: center;
+}
+html
+Copiar
+Editar
+<div class="container">
+    <div class="item">A</div>
+    <div class="item">B</div>
+    <div class="item">C</div>
+</div>
+🎯 Conclusão
+O Flexbox é uma ferramenta poderosa para organizar layouts de forma eficiente e responsiva. Ele substitui muitas técnicas antigas como float e table-layout, tornando a estilização mais intuitiva e flexível.
